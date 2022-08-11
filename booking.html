@@ -1,0 +1,107 @@
+<!-- ======================================== NAV BAR ============================ -->
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Smove Parking Application</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booking.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+    <script src="https://kit.fontawesome.com/bd1754f914.js" crossorigin="anonymous"></script>
+  </head>
+  <header>
+    <!-- Required Navigation Bar -->
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+      <i class="fa-solid fa-bars"></i>
+      </label>
+      <!--  LOGO  SHOWN HERE -->
+      <img src="assets/logo.png" alt="Project Logo" href="homepage.html"> 
+      <ul>
+        <li><a class="active" href="homepage.html">Home</a></li>
+        <li><a href="booking.html">Selection</a></li>
+        <li><a href="details.html">Details</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- ======================================== NAV BAR ============================ -->
+  <body>
+    <!-- Banner Header Image -->
+    <div class="banner-image">
+      <div class="banner-text">
+        <h1 style="font-size:50px">Welcome to Booking Page</h1>
+      </div>
+    </div>
+    <!--====================================== -->
+    <!-- Reservation Fill In -->
+    <!--====================================== -->
+    <div id="navigation">
+      <!-- <img src="assets/layout.png" style="width:100%;height:500px" alt="layout"> -->
+      <p><strong>Navigation Menu</strong></p>
+      <section>
+        <div class="rt-container">
+          <div class="col-rt-12">
+            <div class="Scriptcontent">
+              <!-- CALENDAR -->
+              <div class="calendar-wrapper">
+                <button id="btnPrev" type="button">Prev</button>
+                <button id="btnNext" type="button">Next</button>
+                <div id="divCal"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+              <div class="occupied">
+        <table style="width:10%">
+          <tr>
+            <th>Occupied Lot ID</th>
+          </tr>
+          <tr>
+            <td id="lot_id"></td>
+          </tr>
+        </table>
+      </div>
+      </section>
+      <!-- ANALYTICS -->
+    </div>
+    <div id="extra">
+      <!-- <img src="assets/layout left.png" style="width:100%;height:500px" alt="layout"> -->
+      <h2><strong>Booking Details</strong></h2>
+      <div class="container">
+        <form action="connect.php" method="post">
+          <div class="inputBox">
+            <label for="veh_no">Vehicle Plate No:</label>
+            <input type="text" id="vehicle" name="vehicle" placeholder="Vehicle No">
+          </div>
+          <div class="inputBox">
+            <label for="vehType">Vehicle Type :</label>
+            <select id="vehType" name="vehType" placeholder="Vehicle Type">
+              <option value="car">Car</option>
+              <option value="motorbike">Motorbike</option>
+              <option value="van">Van</option>
+            </select>
+          </div>
+          <div class="inputBox">
+            <label for="date">Date :</label>
+            <input type="date" id="date" name="date">
+          </div>
+          <div class="inputBox">
+            <label for="time">Time :</label>
+            <input type="time" id="time" name="time">
+          </div>
+          <br>
+          <input class="submit-btn" name="save" type="submit" value="Book Now">
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <p>2022 &copy; SMOVE <span>|</span> Privacy Policy <span>|</span> Terms of Service</a></p>
+    </footer>
+    <!-- Calendar JS -->
+    <script src="booking.js"></script>
+    <script type="text/javascript">AddFillerLink("content", "navigation", "extra")</script>
+  </body>
+</html>

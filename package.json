@@ -1,0 +1,14 @@
+{
+  "name": "agile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "booking.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
