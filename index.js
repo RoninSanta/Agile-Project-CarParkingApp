@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const path = require('path'); 
 
-app.get("/test.html", function (req, res) {
+app.get("test.html", function (req, res) {
   res.sendFile(path.join(__dirname + '/test.html')); 
 });
 
