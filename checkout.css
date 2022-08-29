@@ -1,0 +1,478 @@
+/* ==============================NAV BAR CSS START  =====================================================*/
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+  background: rgba(0, 0, 0, 0.7) url(assets/booking.jpg);
+  background-blend-mode: darken;
+  min-height: 100vh;
+  height: 300px;
+}
+
+img {
+  float: left;
+  width: 80px;
+  height: 80px;
+}
+
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+nav ul{
+  float: center;
+  display: block;
+  text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    float: none;
+    position: relative;
+    line-height: 80px;
+    text-align: center;
+    margin: 0 20px;
+}
+nav ul li a{
+    color: #90EE90;
+    font-size: 20px;
+    padding: 7px 15px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a:hover{
+    background: #2ea3fd;
+    transition: .5s;
+}
+/* Nav Bar Icon Customization */
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+
+/* ==============================NAV BAR CSS ENDS  =====================================================*/
+/*  Content Customizing */
+/* =========================================================== */
+.container{
+    background: rgba(0, 0, 0, 0.7) url(assets/booking.jpg);
+    background-blend-mode: darken;
+    min-height: 100vh;
+    height: 300px;
+}
+.container form{
+  margin-bottom: 80px;
+  padding:20px;
+  width:800px;
+  position: absolute;
+  left: 10%;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:10px;
+}
+
+.container form .row .col{
+  flex:1 1 250px;
+}
+
+.container form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 2px;
+  text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+  margin:5px 0;
+  padding:1px 1px;
+}
+  
+.container form .row .col .inputBox span{
+  margin-bottom: 1px;
+  display: block;
+}
+  
+.container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:1px 1px;
+  font-size: 15px;
+  text-transform: none;
+  gap:2px;
+}
+  
+.container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+  
+.container form .row .col .flex{
+  display: flex;
+  gap:5px;
+}
+
+.container form .Submit{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #27ae60;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+  
+.container form .Submit:hover{
+  background: #2ecc71;;
+}
+.container form .Reset{
+    width: 100%;
+    padding:12px;
+    font-size: 17px;
+    background: #b62222;
+    color:#fff;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+    
+  .container form .Reset:hover{
+    background: #e10808;;
+  }
+  
+input {
+  margin: .5rem;
+}
+/* CART SUMMARY */
+/* ///////////////////////////////// */
+.container .form2 {
+  margin-bottom: 80px;
+  text-align: center;
+  padding:20px;
+  width:450px;
+  position: absolute;
+  left: 65%;
+  background: #fff;
+  border-style: dashed; 
+}
+.container .form2 .row2{
+  display: flex;
+  flex-wrap: wrap;
+  gap:10px;
+}
+
+.container .form2 .row2 .col2{
+  flex:1 1 250px;
+}
+
+.Header{
+  margin: auto;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Heading{
+  font-size: 25px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+.Action{
+  font-size: 14px;
+  font-family: ‘Open Sans’;
+  font-weight: 600;
+  color: #E44C4C;
+  cursor: pointer;
+  border-bottom: 1px solid #E44C4C;
+}
+
+/* HEADER COLUM  */
+/* Column Captions */
+.cart-contents{
+	margin-bottom: 72px;
+}
+.row{
+	box-shadow: 0 1px 0 #e1e5e8;
+	padding-bottom :0;
+	background-color: #ffffff;
+	margin-bottom: 11px;
+}
+
+.row span{
+	padding: 1px 0 6px 0;
+  padding-left: 2px;
+}
+
+.columnCaptions{
+	color: #7e93a7;
+	font-size:18px;
+	text-transform: uppercase;
+	padding: 0;
+	box-shadow: 0 0 0;
+	background-color: #f2f6f9;
+}
+
+.columnCaptions span:first-child{
+	padding-left:2px;
+}
+
+.columnCaptions span{
+	padding: 0 30px 0 0;
+}
+
+.columnCaptions span:last-child{
+  float: right;
+	padding-left: 25px;
+}
+
+/* Items */
+
+.itemName {	
+	color: #7e93a7;
+	font-size :16px;
+	font-weight: bold;
+  width: 150px;
+  border: 0;
+  padding-left: 30px;
+}
+
+.hours{	
+	color: #4ea6bc;
+	font-size :18px;
+	font-weight: bold;
+  float: left;
+	width: 40px;
+  border: 0;
+}
+
+.row .price{
+	color: #f06953;
+	font-size :18px;
+	font-weight: bold;
+  margin-left: 10px;
+  left: 50px;
+  width: 70px;
+  border: 0;
+}
+
+/* Totals */
+
+.totals span{
+  padding: 20px 10px 20px 0;
+}
+
+.totals .itemName{
+  float: left;
+  margin-left: 120px;
+  top: 1px;
+}
+.totals .totalprice{
+  color: red;
+	font-size :25px;
+  margin-left:-30px;
+	font-weight: bold;
+  width: 100px;
+  border: 0;
+}
+
+/*============================= Steps bar ======================================*/
+.checkout-wrap {
+  color: #444;
+  margin: 40px auto;
+  max-width: 890px;
+  position: relative;
+  padding-bottom: 80px;
+}
+
+ul.checkout-bar {
+  margin: 0 20px;
+  font-weight: bold;
+}
+ul.checkout-bar li {
+  color: #ccc;
+  display: block;
+  font-size: 13px;
+  padding: 14px 20px 14px 80px;
+  position: relative;
+}
+ul.checkout-bar li:before {
+  background: #ddd;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: black;
+  font-size: 16px;
+  left: 20px;
+  line-height: 37px;
+  height: 35px;
+  position: absolute;
+  text-align: center;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  top: 4px;
+  width: 35px;
+  z-index: 999;
+}
+ul.checkout-bar li.active {
+  color: #8bc53f;
+  font-weight: bold;
+}
+ul.checkout-bar li.active:before {
+  background: #8bc53f;
+  z-index: 99999;
+}
+ul.checkout-bar li.visited {
+  background: #ececec;
+  color: #57aed1;
+  z-index: 99999;
+}
+ul.checkout-bar li.visited:before {
+  background: #57aed1;
+  z-index: 99999;
+}
+ul.checkout-bar li:nth-child(1):before {
+  content: "1";
+}
+ul.checkout-bar li:nth-child(2):before {
+  content: "2";
+}
+ul.checkout-bar li:nth-child(3):before {
+  content: "3";
+}
+ul.checkout-bar li:nth-child(4):before {
+  content: "4";
+}
+ul.checkout-bar li:nth-child(5):before {
+  content: "5";
+}
+ul.checkout-bar li:nth-child(6):before {
+  content: "6";
+}
+ul.checkout-bar a {
+  color: #57aed1;
+  font-size: 13px;
+}
+
+@media all and (min-width: 800px) {
+  .checkout-bar li.active:after {
+    background-color: #8bc53f;
+    content: "";
+    height: 15px;
+    width: 100%;
+    left: 50%;
+    position: absolute;
+    top: -50px;
+    z-index: 0;
+  }
+
+  .checkout-wrap {
+    margin: 80px auto;
+  }
+
+  ul.checkout-bar {
+    background-color: #ececec;
+    border-radius: 15px;
+    height: 15px;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+  }
+  ul.checkout-bar:before {
+    background-color: #57aed1;
+    border-radius: 15px;
+    content: " ";
+    height: 15px;
+    left: 0;
+    position: absolute;
+    width: 10%;
+  }
+  ul.checkout-bar li {
+    display: inline-block;
+    margin: 50px 0 0;
+    padding: 0;
+    text-align: center;
+    width: 19%;
+  }
+  ul.checkout-bar li:before {
+    height: 45px;
+    left: 40%;
+    line-height: 45px;
+    position: absolute;
+    top: -65px;
+    width: 45px;
+    z-index: 99;
+  }
+  ul.checkout-bar li.visited {
+    background: none;
+  }
+  ul.checkout-bar li.visited:after {
+    background-color: #57aed1;
+    content: "";
+    height: 15px;
+    left: 50%;
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    z-index: 99;
+  }
+}
+
+
+/*  ============================NAV BAR mobile CSS. ============================== */
+/*Responsiveness on different sizes */
+@media(max-width:950px){
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media(max-width:850px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+
+    }
+    .container form{
+      transform: translate(-50%, 25%);
+    }
+}

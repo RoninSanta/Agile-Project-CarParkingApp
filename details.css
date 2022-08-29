@@ -1,0 +1,407 @@
+/* ====================================== NAV BAR CSS START ======================================*/
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+  background: rgba(0, 0, 0, 0.7) url(assets/booking.jpg);
+  background-blend-mode: darken;
+  min-height: 100vh;
+  height: 300px;
+}
+img {
+  float: left;
+  width: 80px;
+  height: 80px;
+}
+
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+nav ul{
+  float: center;
+  display: block;
+  text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    float: none;
+    position: relative;
+    line-height: 80px;
+    text-align: center;
+    margin: 0 20px;
+}
+nav ul li a{
+    color: #90EE90;
+    font-size: 20px;
+    padding: 7px 15px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a:hover{
+    background: #fcfeff;
+    padding: 10px;
+    border-radius: 4px;
+    transition: .5s;
+}
+/* Nav Bar Icon Customization */
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+/*  UPDATE FORM */
+/* ///////////////////////////////////////////// */
+
+  /*Left-side Section */
+div#Update {
+    display: block;
+    box-shadow: 0 5px 10px #CCC;
+    border-radius: 5px;
+    text-align: center;
+    background: #42aed8;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    width: 40%;
+}
+
+div#Update h2{
+    box-shadow: 0 1px 2px #888;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+.container .inputBox {
+    margin: 35px 0;
+}
+  
+.container .inputBox label{
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+}
+  
+.container .inputBox input{
+  width: 40%;
+  border:1px solid #ccc;
+  padding:5px 10px;
+  font-size: 15px;
+}
+  
+.container .inputBox select{
+  width: 40%;
+  border:1px solid #ccc;
+  padding:5px 10px;
+  font-size: 15px;
+}
+  
+.container .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.submit-btn {
+  background: #0066A2;
+  color: white;
+  border-style: outset;
+  border-color: #0066A2;
+  height: 50px;
+  width: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font: bold 15px arial,sans-serif;
+  text-shadow: none;
+}
+
+.timer{
+  width: 90px;
+  height: 35px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ====================================== NAV BAR CSS ENDS ====================================== */
+
+
+/*============================= Steps bar ======================================*/
+.checkout-wrap {
+  color: #444;
+  margin: 40px auto;
+  max-width: 890px;
+  position: relative;
+  padding-bottom: 80px;
+}
+
+ul.checkout-bar {
+  margin: 0 20px;
+  font-weight: bold;
+}
+ul.checkout-bar li {
+  color: #ccc;
+  display: block;
+  font-size: 13px;
+  padding: 14px 20px 14px 80px;
+  position: relative;
+}
+ul.checkout-bar li:before {
+  background: #ddd;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: black;
+  font-size: 16px;
+  left: 20px;
+  line-height: 37px;
+  height: 35px;
+  position: absolute;
+  text-align: center;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  top: 4px;
+  width: 35px;
+  z-index: 999;
+}
+ul.checkout-bar li.active {
+  color: #8bc53f;
+  font-weight: bold;
+}
+ul.checkout-bar li.active:before {
+  background: #8bc53f;
+  z-index: 99999;
+}
+ul.checkout-bar li.visited {
+  background: #ececec;
+  color: #57aed1;
+  z-index: 99999;
+}
+ul.checkout-bar li.visited:before {
+  background: #57aed1;
+  z-index: 99999;
+}
+ul.checkout-bar li:nth-child(1):before {
+  content: "1";
+}
+ul.checkout-bar li:nth-child(2):before {
+  content: "2";
+}
+ul.checkout-bar li:nth-child(3):before {
+  content: "3";
+}
+ul.checkout-bar li:nth-child(4):before {
+  content: "4";
+}
+ul.checkout-bar li:nth-child(5):before {
+  content: "5";
+}
+ul.checkout-bar li:nth-child(6):before {
+  content: "6";
+}
+ul.checkout-bar a {
+  color: #57aed1;
+  font-size: 13px;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  font-size: 0.9em;
+  border-radius: 5px;
+  text-align: center;
+  background: #ffffff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 50%;
+}
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+.styled-table th,
+.styled-table td {
+  padding: 10px 32px;
+  width: 50%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+/* Remove BUTTON */
+.remove-btn{
+  font-size: 14px;
+  font-family: ‘Open Sans’;
+  font-weight: 600;
+  color: #E44C4C;
+  cursor: pointer;
+  border: 1px solid #E44C4C;
+}
+
+/*Footer  CSS-------------------------------------*/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
+  color: white;
+  text-align: center;
+}
+
+@media all and (min-width: 800px) {
+  .checkout-bar li.active:after {
+    background-color: #8bc53f;
+    content: "";
+    height: 15px;
+    width: 100%;
+    left: 50%;
+    position: absolute;
+    top: -50px;
+    z-index: 0;
+  }
+
+  .checkout-wrap {
+    margin: 80px auto;
+  }
+
+  ul.checkout-bar {
+    background-color: #ececec;
+    border-radius: 15px;
+    height: 15px;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+  }
+  ul.checkout-bar:before {
+    background-color: #57aed1;
+    border-radius: 15px;
+    content: " ";
+    height: 15px;
+    left: 0;
+    position: absolute;
+    width: 10%;
+  }
+  ul.checkout-bar li {
+    display: inline-block;
+    margin: 50px 0 0;
+    padding: 0;
+    text-align: center;
+    width: 19%;
+  }
+  ul.checkout-bar li:before {
+    height: 45px;
+    left: 40%;
+    line-height: 45px;
+    position: absolute;
+    top: -65px;
+    width: 45px;
+    z-index: 99;
+  }
+  ul.checkout-bar li.visited {
+    background: none;
+  }
+  ul.checkout-bar li.visited:after {
+    background-color: #57aed1;
+    content: "";
+    height: 15px;
+    left: 50%;
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    z-index: 99;
+  }
+
+}
+
+@media(max-width:850px){
+  .styled-table {
+    position: absolute;
+    display: block;
+  }
+
+  .styled-table thead tr {
+    width: 10%;
+  } 
+
+  div#Update{
+    width: 80%;
+    left:10%;
+    margin-left: 10px;
+    margin-top: 200px;
+    position: absolute;
+    display: block;
+  }
+
+  .checkbtn{
+    display: block;
+}
+ul{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #2c3e50;
+  top: 80px;
+  left: -100%;
+  text-align: center;
+  transition: all .5s;
+}
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+nav ul li a{
+    font-size: 20px;
+}
+a:hover{
+    background: none;
+    color: #0082e6;
+}
+#check:checked ~ ul{
+    left: 0;
+
+}
+.container{
+  display: block;
+}
+div#navigation{
+  width: 75%;
+}
+div#extra{
+  display: inline-block;
+  width: 75%;
+}
+
+.checkout-wrap {
+  margin: 20px auto;
+}
+
+}

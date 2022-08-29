@@ -1,0 +1,135 @@
+<!-- ======================================== NAV BAR ============================ -->
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Smove Parking Application</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="book.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+    <script src="https://kit.fontawesome.com/bd1754f914.js" crossorigin="anonymous"></script>
+  </head>
+  <header>
+    <!-- Required Navigation Bar -->
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+      <i class="fa-solid fa-bars"></i>
+      </label>
+      <!--  LOGO  SHOWN HERE -->
+      <img src="assets/logo.png" alt="Project Logo" href="homepage.html"> 
+      <ul>
+        <li><a class="active" href="homepage.html">Home</a></li>
+        <li><a href="booking.html">Selection</a></li>
+        <li><a href="details.php">Details</a></li>
+        <li><a href="checkout.php">Checkout</a></li>
+        <li><a href="logout.php">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- ======================================== NAV BAR ============================ -->
+  <body>
+    <div class="checkout-wrap">
+      <ul class="checkout-bar">
+        <li class="visited first">
+          <a href="homepage.html">Login</a>
+        </li>
+        <li class="active">Book A Slot</li>
+        <li class="next">Parking Details</li>
+        <li class="next">Checkout</li>
+        <li class="">Complete</li>
+      </ul>
+    </div>
+    <!--====================================== -->
+    <!-- Calendar Details -->
+    <!--====================================== -->
+    <div id="navigation">
+      <p><strong>Calendar</strong></p>
+      <section>
+        <div class="rt-container">
+          <div class="col-rt-12">
+            <div class="Scriptcontent">
+              <!-- CALENDAR -->
+              <div class="calendar-wrapper">
+                <button id="btnPrev" type="button">Prev</button>
+                <button id="btnNext" type="button">Next</button>
+                <div id="divCal"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!--====================================== -->
+    <!-- Reservation Fill in -->
+    <!--====================================== -->
+    </div>
+    <div id="extra">
+      <h2><strong>Booking Details</strong></h2>
+      <div class="container">
+        <form action="connect.php" method="post">
+          <div class="inputBox">
+            <label for="vehicle">Vehicle Plate No:</label>
+            <input type="text" id="vehicle" name="vehicle" placeholder="Vehicle No" required>
+          </div>
+          <div class="inputBox">
+            <label for="vehType">Vehicle Type :</label>
+            <select id="vehType" name="vehType" placeholder="Vehicle Type">
+              <option value="car">Car</option>
+              <option value="motorbike">Motorbike</option>
+              <option value="van">Van</option>
+            </select>
+          </div>
+          <div class="inputBox">
+            <label for="date">Date :</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div class="inputBox">
+            <label for="time">Time :</label>
+            <input type="time" id="time" name="time" required>
+          </div>
+          <div class="inputBox">
+            <label for="duration">Duration :</label>
+            <select id="duration" name="duration" placeholder="Hours">
+              <option value="3600">1 Hr</option>
+              <option value="7200">2 Hrs</option>
+              <option value="10800">3 Hrs</option>
+              <option value="14400">4 Hrs</option>
+              <option value="18000">5 Hrs</option>
+              <option value="21600">6 Hrs</option>
+              <option value="25200">7 Hrs</option>
+              <option value="28800">8 Hrs</option>
+              <option value="32400">9 Hrs</option>
+              <option value="36000">10 Hrs</option>
+              <option value="39600">11 Hrs</option>
+              <option value="43200">12 Hrs</option>
+              <option value="46800">13 Hrs</option>
+              <option value="50400">14 Hrs</option>
+              <option value="54000">15 Hrs</option>
+              <option value="57600">16 Hrs</option>
+              <option value="61200">17 Hrs</option>
+              <option value="64800">18 Hrs</option>
+              <option value="68400">19 Hrs</option>
+              <option value="72000">20 Hrs</option>
+              <option value="75600">21 Hrs</option>
+              <option value="79200">22 Hrs</option>
+              <option value="82800">23 Hrs</option>
+              <option value="86400">1 Day</option>
+            </div>
+          <br>
+          <a href="details.html">
+          <input class="submit-btn" name="submit" id="submit-btn" type="submit" value="Book Now">
+          </a>
+        </form>
+      </div>
+    </div>
+
+  </body>
+    <footer>
+    <div class="footer">
+      <p>2022 &copy; SMOVE <span>|</span> Privacy Policy <span>|</span> Terms of Service</a></p>
+    </div>
+    </footer>
+    <!-- Calendar JS -->
+    <script src="booking.js"></script>
+    <script type="text/javascript">AddFillerLink("content", "navigation", "extra")</script>
+</html>
