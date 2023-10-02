@@ -1,4 +1,4 @@
-# Agile-Project-CarParkingApp
+# CarParking App with SQL and PHP
 ## "Smoove" Parking App ##
 - Provides a website that can allow users to search and book parking spaces ahead of time. Parking fees will be caluated on the website prior to checking out.
 #### Objective
